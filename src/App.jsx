@@ -6,6 +6,24 @@ import linkedinIcon from '/src/assets/img/linkedin.svg';
 import githubIcon from '/src/assets/img/github.svg';
 import codeIcon from '/src/assets/img/code.svg';
 
+import reactLogo from '/src/assets/React.png';
+import vueLogo from '/src/assets/Vue.js.png';
+import solidLogo from '/src/assets/Solid.js.png';
+import jsLogo from '/src/assets/JavaScript.png';
+import tsLogo from '/src/assets/TypeScript.png';
+import htmlLogo from '/src/assets/HTML5.png';
+import cssLogo from '/src/assets/CSS3.png';
+import threeLogo from '/src/assets/Three.js.png';
+
+import nodeLogo from '/src/assets/Node.js.png';
+import pythonLogo from '/src/assets/Python.png';
+import expressLogo from '/src/assets/Express.png';
+import rustLogo from '/src/assets/Rust.png';
+import postgresLogo from '/src/assets/PostgresSQL.png';
+import mongoLogo from '/src/assets/MongoDB.png';
+import csharpLogo from '/src/assets/csap.png';
+import firebaseLogo from '/src/assets/Firebase.png';
+
 import { db } from './firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -157,31 +175,28 @@ function App() {
     }
   ];
 
-  const skills = {
-    frontend: [
-    { name: "React", logo: "/src/assets/React.png" },
-    
-      { name: "Vue.js", logo: "/src/assets/Vue.js.png" },
-      { name: "SolidJS", logo: "/src/assets/Solid.js.png" },
-      { name: "JavaScript", logo: "/src/assets/JavaScript.png" },
-      { name: "TypeScript", logo: "/src/assets/TypeScript.png" },
-      { name: "HTML5", logo: "/src/assets/HTML5.png" },
-      { name: "CSS3", logo: "/src/assets/CSS3.png" },
-      { name: "Three.js", logo: "/src/assets/Three.js.png" }
-
-    ],
-    backend: [
-      { name: "Node.js", logo: "/src/assets/Node.js.png" },
-      { name: "Python", logo: "/src/assets/Python.png" },
-      { name: "Express", logo: "/src/assets/Express.png" },
-      { name: "Rust", logo: "/src/assets/Rust.png" },
-      { name: "PostgreSQL", logo: "/src/assets/PostgresSQL.png" },
-      { name: "MongoDB", logo: "/src/assets/MongoDB.png" },
-      { name: "C#", logo: "/src/assets/csap.png" },
-      { name: "Firebase", logo: "/src/assets/Firebase.png" }
-    ]
-  };
-
+ const skills = {
+  frontend: [
+    { name: "React", logo: reactLogo },
+    { name: "Vue.js", logo: vueLogo },
+    { name: "SolidJS", logo: solidLogo },
+    { name: "JavaScript", logo: jsLogo },
+    { name: "TypeScript", logo: tsLogo },
+    { name: "HTML5", logo: htmlLogo },
+    { name: "CSS3", logo: cssLogo },
+    { name: "Three.js", logo: threeLogo }
+  ],
+  backend: [
+    { name: "Node.js", logo: nodeLogo },
+    { name: "Python", logo: pythonLogo },
+    { name: "Express", logo: expressLogo },
+    { name: "Rust", logo: rustLogo },
+    { name: "PostgreSQL", logo: postgresLogo },
+    { name: "MongoDB", logo: mongoLogo },
+    { name: "C#", logo: csharpLogo },
+    { name: "Firebase", logo: firebaseLogo }
+  ]
+};
   return (
     <div class={styles.app}>
       {/* Three.js Canvas */}
